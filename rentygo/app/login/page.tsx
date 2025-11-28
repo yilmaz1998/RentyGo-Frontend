@@ -30,6 +30,7 @@ const page = () => {
         username, password
       })
       console.log("Login successful:", response.data)
+      localStorage.setItem("token", response.data.token);
       router.push("/profile");
 
     } catch (error) {

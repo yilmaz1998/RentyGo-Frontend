@@ -21,16 +21,12 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs";
+import { User } from "@/types/types";
 
 const page = () => {
   const router = useRouter();
 
-  const [user, setUser] = useState<{
-    username?: string;
-    email?: string;
-    password? : string;
-  } | null>(null);
-
+  const [user, setUser] = useState<User | null>(null);
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

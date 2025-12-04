@@ -47,7 +47,7 @@ const page = () => {
         <CardTitle className="text-2xl">RentGo</CardTitle>
         <CardTitle>Login to your account</CardTitle>
         <CardDescription>
-          Enter your email below to login to your account
+        Enter your information below to log in to your account
         </CardDescription>
         <CardAction>
         <Link href="/signup" className="underline">
